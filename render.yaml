@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: solve
+    env: docker
+    plan: starter
+    envVars:
+      - key: PLAYWRIGHT_BROWSERS_PATH
+        value: /ms-playwright
+      - key: WEB_CONCURRENCY
+        value: 1
